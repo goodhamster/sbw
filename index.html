@@ -5,14 +5,24 @@
   <meta name="viewport" content="width=device-width">
   <title>JS Bin</title>
 </head>
+
+<script src= "https://player.twitch.tv/js/embed/v1.js"></script>
+<div id="test"></div>
+<script type="text/javascript">
+  var options = {
+    width: 300,
+    height: 300,
+    channel: "saltybet",
+    // only needed if your site is also embedded on embed.example.com and othersite.example.com
+    parent: ["goodhamster.github.io"]
+  };
+  var player = new Twitch.Player("test1", options);
+  player.setVolume(0.5);
+</script>
+
 <body>
-<iframe
-    src="https://player.twitch.tv/?channel=zackrawrr&parent=goodhamster.github.io"
-    height="300"
-    width="300"
-    allowfullscreen
-    autoplayer=false>
-</iframe>
+<div class="test1">
+</div>
   
 </body>
 </html>
